@@ -1,0 +1,59 @@
+2024-06-23 19:59:34,031 - Connecting to 127.0.0.1:7497 with clientId 14...
+2024-06-23 19:59:34,032 - Connected
+2024-06-23 19:59:34,048 - Logged on to server version 176
+2024-06-23 19:59:34,050 - API connection ready
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:hfarm
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:eufarmnj
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+2024-06-23 19:59:34,050 - Warning 2104, reqId -1: Market data farm connection is OK:usopt
+2024-06-23 19:59:34,050 - Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+2024-06-23 19:59:34,050 - Warning 2106, reqId -1: HMDS data farm connection is OK:hkhmds
+2024-06-23 19:59:34,050 - Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+2024-06-23 19:59:34,050 - Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+2024-06-23 19:59:34,050 - Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefhk
+2024-06-23 19:59:34,064 - position: Position(account='DU8663685', contract=Stock(conId=76792991, symbol='TSLA', exchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS'), position=100.0, avgCost=185.66)
+2024-06-23 19:59:34,064 - position: Position(account='DU8663685', contract=Crypto(conId=479624278, symbol='BTC', currency='USD', localSymbol='BTC.USD', tradingClass='BTC'), position=0.00385866, avgCost=52345.73660286213)
+2024-06-23 19:59:34,824 - Synchronization complete
+2024-06-23 19:59:35,044 - strategy started
+2024-06-23 19:59:35,044 - checking if start time has reached
+2024-06-23 19:59:35,044 - starting the main code
+2024-06-23 19:59:35,044 - starting the main code with candle size60
+2024-06-23 19:59:35,053 - position: Position(account='DU8663685', contract=Stock(conId=76792991, symbol='TSLA', exchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS'), position=100.0, avgCost=185.66)
+2024-06-23 19:59:35,053 - position: Position(account='DU8663685', contract=Crypto(conId=479624278, symbol='BTC', currency='USD', localSymbol='BTC.USD', tradingClass='BTC'), position=0.00385866, avgCost=52345.73660286213)
+2024-06-23 19:59:35,093 - fetched order_df and position_df
+2024-06-23 19:59:35,094 - BTC
+2024-06-23 19:59:35,094 - fetching historical data
+2024-06-23 19:59:40,194 - calculated indicators
+2024-06-23 19:59:40,208 - checking condition
+2024-06-23 19:59:40,209 - we have some position and current ticker is in position
+2024-06-23 19:59:40,209 - ETH
+2024-06-23 19:59:40,209 - fetching historical data
+2024-06-23 19:59:41,706 - calculated indicators
+2024-06-23 19:59:41,715 - checking condition
+2024-06-23 19:59:41,715 - we have some position but current ticker is not in position
+2024-06-23 19:59:41,715 - inside strategy
+2024-06-23 19:59:41,725 - buy condiiton satisfied
+2024-06-23 19:59:41,726 - placeOrder: New order Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=MarketOrder(orderId=12, clientId=14, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=12, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 725796, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2024-06-23 19:59:41,726 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=MarketOrder(orderId=12, clientId=14, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=12, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 725796, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2024-06-23 19:59:41,788 - Error 10289, reqId 12: You must set Cash Quantity for this order
+2024-06-23 19:59:41,788 - Canceled order: Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=MarketOrder(orderId=12, clientId=14, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=12, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 725796, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 788481, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 10289, reqId 12: You must set Cash Quantity for this order', errorCode=10289)], advancedError='')
+2024-06-23 19:59:41,788 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=MarketOrder(orderId=12, clientId=14, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=12, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 725796, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 788481, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 10289, reqId 12: You must set Cash Quantity for this order', errorCode=10289)], advancedError='')
+2024-06-23 19:59:42,727 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=MarketOrder(orderId=12, clientId=14, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=12, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 725796, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 41, 788481, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 10289, reqId 12: You must set Cash Quantity for this order', errorCode=10289)], advancedError='')
+2024-06-23 19:59:42,727 - placed market order
+2024-06-23 19:59:42,728 - placeOrder: New order Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=Order(orderId=13, clientId=14, action='SELL', totalQuantity=1, orderType='STP', auxPrice=3386, tif='GTC'), orderStatus=OrderStatus(orderId=13, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 42, 728055, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2024-06-23 19:59:42,729 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=Order(orderId=13, clientId=14, action='SELL', totalQuantity=1, orderType='STP', auxPrice=3386, tif='GTC'), orderStatus=OrderStatus(orderId=13, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 42, 728055, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2024-06-23 19:59:43,730 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=Order(orderId=13, clientId=14, action='SELL', totalQuantity=1, orderType='STP', auxPrice=3386, tif='GTC'), orderStatus=OrderStatus(orderId=13, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 42, 728055, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+2024-06-23 19:59:43,731 - placed stop order
+2024-06-23 20:00:01,735 - Error 436, reqId 13: You must specify an allocation (either a single account, group, or profile).
+2024-06-23 20:00:01,737 - Canceled order: Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=Order(orderId=13, clientId=14, action='SELL', totalQuantity=1, orderType='STP', auxPrice=3386, tif='GTC'), orderStatus=OrderStatus(orderId=13, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 42, 728055, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 30, 1, 735498, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 436, reqId 13: You must specify an allocation (either a single account, group, or profile).', errorCode=436)], advancedError='')
+2024-06-23 20:00:01,737 - Trade(contract=Crypto(conId=495759171, symbol='ETH', exchange='PAXOS', currency='USD', localSymbol='ETH.USD', tradingClass='ETH'), order=Order(orderId=13, clientId=14, action='SELL', totalQuantity=1, orderType='STP', auxPrice=3386, tif='GTC'), orderStatus=OrderStatus(orderId=13, status='Cancelled', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 29, 42, 728055, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2024, 6, 23, 14, 30, 1, 735498, tzinfo=datetime.timezone.utc), status='Cancelled', message='Error 436, reqId 13: You must specify an allocation (either a single account, group, or profile).', errorCode=436)], advancedError='')
+2024-06-23 20:00:01,754 - position: Position(account='DU8663685', contract=Stock(conId=76792991, symbol='TSLA', exchange='NASDAQ', currency='USD', localSymbol='TSLA', tradingClass='NMS'), position=100.0, avgCost=185.66)
+2024-06-23 20:00:01,756 - position: Position(account='DU8663685', contract=Crypto(conId=479624278, symbol='BTC', currency='USD', localSymbol='BTC.USD', tradingClass='BTC'), position=0.00385866, avgCost=52345.73660286213)
+2024-06-23 20:00:01,777 - fetched order_df and position_df
+2024-06-23 20:00:01,777 - BTC
+2024-06-23 20:00:01,777 - fetching historical data

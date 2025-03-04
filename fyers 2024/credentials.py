@@ -1,0 +1,9 @@
+client_id = '5YKT940X4B-100'
+secret_key = 'KZGC320N71'
+redirect_uri ='https://www.google.com/'
+user_name='XS45474'
+totp_key='OT6UASKV6P7AUL3TFTXPOSKJVDPW442T'
+pin1 = "1"
+pin2 = "9"
+pin3 = "9"
+pin4 = "8"
